@@ -1,10 +1,13 @@
 {
-  "name": "next-boilerplate",
-  "version": "0.1.0",
-  "private": true,
+  "name": "daehyun-shin",
+  "version": "1.0.0",
+  "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next -p 3000",
+    "prod": "cross-env cp -f .env.prod .env.local && next -p 3000",
+    "inspector": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
+    "bundle": "cross-env ANALYZE=true next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -53,6 +56,8 @@
     "babel-plugin-styled-components": "^2.0.6",
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -60,9 +65,7 @@
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "next-compose-plugins": "^2.2.1",
-    "eslint": "8.18.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-next": "12.1.6",
-    "prettier": "^2.7.1"
+    "prettier": "^2.5.1",
+    "typescript": "^4.6.2"
   }
 }

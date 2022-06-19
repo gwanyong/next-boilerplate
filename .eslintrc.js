@@ -47,4 +47,4 @@ module.exports = {
     "class-methods-use-this": 0,
     "react/function-component-definition": [2, { namedComponents: "arrow-function" }],
   },
-}
+};

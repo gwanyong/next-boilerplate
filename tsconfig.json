@@ -1,0 +1,71 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "preserve",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "rootDir": "./",
+    "target": "es2020",
+    "baseUrl": ".",
+    "noEmitOnError": true,
+    "paths": {
+      "~/*": [
+        "*"
+      ],
+      "interface": [
+        "interface/*"
+      ],
+      "pages": [
+        "pages/*"
+      ],
+      "store": [
+        "store/*"
+      ],
+      "styles": [
+        "styles/*"
+      ],
+      "utils": [
+        "utils/*"
+      ],
+      "hoc": [
+        "hoc/*"
+      ],
+      "image": [
+        "public/*"
+      ]
+    },
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "incremental": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
