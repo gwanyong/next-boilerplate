@@ -4,18 +4,18 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 });
 
 const nextConfig = {
-  async rewrites() {
-    return [
-      {
-        source: "/auth/:path*",
-        destination: `${process.env.NEXT_PUBLIC_AUTH_URL}/:path*`,
-      },
-      {
-        source: "/base/:path*",
-        destination: `${process.env.NEXT_PUBLIC_BASE_URL}/:path*`,
-      },
-    ];
-  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/:path*",
+  //       destination: `${process.env.NEXT_PUBLIC_AUTH_URL}/:path*`,
+  //     },
+  //     {
+  //       source: "/base/:path*",
+  //       destination: `${process.env.NEXT_PUBLIC_BASE_URL}/:path*`,
+  //     },
+  //   ];
+  // },
   eslint: {
     ignoreDuringBuilds: true,
   },
