@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components";
 import themes from "~/styles/global-styles";
 import { fetcher } from "~/utils/fetcher";
 import { SWRConfig } from "swr";
+import GlobalStyles from "~/styles/global-styles";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const { fallback } = pageProps;
@@ -19,6 +20,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <RecoilRoot>
       <ThemeProvider theme={themes}>
         <SWRConfig value={option}>
+          <GlobalStyles />
           <Component {...pageProps} />;
         </SWRConfig>
       </ThemeProvider>
